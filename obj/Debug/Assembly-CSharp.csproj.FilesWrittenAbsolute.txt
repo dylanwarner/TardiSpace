@@ -1,0 +1,85 @@
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/UnityEngine.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/UnityEditor.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/Mono.Cecil.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/Unity.DataContract.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/dinadeng/Desktop/New Unity Project/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/dinadeng/Desktop/New Unity Project/obj/Debug/Assembly-CSharp.dll
+/Users/dinadeng/Desktop/New Unity Project/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/dinadeng/Desktop/Spacetards/obj/Debug/Assembly-CSharp.dll
+/Users/dinadeng/Desktop/Spacetards/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/UnityEngine.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/UnityEditor.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/Mono.Cecil.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/Unity.DataContract.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/dinadeng/Desktop/Spacetards/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/obj/Debug/Assembly-CSharp.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/UnityEngine.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/UnityEditor.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/Mono.Cecil.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/Unity.DataContract.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/dylanwarner/Desktop/Spacetards_UPDATED/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/obj/Debug/Assembly-CSharp.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/UnityEngine.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/UnityEditor.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/Mono.Cecil.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/Unity.DataContract.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/dylanwarner/Desktop/Spacetards_Score:Health/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/obj/Debug/Assembly-CSharp.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/UnityEngine.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/UnityEditor.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/Mono.Cecil.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/Unity.DataContract.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/dinadeng/Desktop/Spacetards_Final 2/Temp/bin/Debug/Mono.Cecil.Mdb.dll

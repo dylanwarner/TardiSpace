@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GoodCollectables.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="128" Column="54" />
+      <File FileName="Assets/Scripts/BadCollectables.cs" Line="9" Column="35" />
+      <File FileName="Assets/Scripts/GoodCollectables.cs" Line="10" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

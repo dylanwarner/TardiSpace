@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{7B731882-5B2A-D0EC-6076-7E8E14F6EEE8}") = "Spacetards_Score:Health", "Assembly-CSharp.csproj", "{F2A853B8-34F6-9DAF-865F-C9B698FF83CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2A853B8-34F6-9DAF-865F-C9B698FF83CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A853B8-34F6-9DAF-865F-C9B698FF83CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A853B8-34F6-9DAF-865F-C9B698FF83CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A853B8-34F6-9DAF-865F-C9B698FF83CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
