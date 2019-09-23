@@ -24,9 +24,12 @@ public class PlayerMove : MonoBehaviour {
 	// score and health variables
 	public int score;
 	public int starthealth = 100;
-	public int currentHealth; 
+	public int currentHealth;
+    //public int startTime;
+    public float currentTime;
 	public Text scoreText;
 	public Text healthText;
+    public Text timeText;
 
     //audio variables
     public AudioClip pickupSound1;
@@ -35,11 +38,16 @@ public class PlayerMove : MonoBehaviour {
     public AudioClip injurySound2;
     public AudioClip gameoverSound;
 
+    private Animator animator;
+
     // initialization
     void Start () {
 
-		// viewport tow world point is relative to the camera
-		// getting the distance between the gameObject to camera
+        animator = this.GetComponent<Animator>();
+        StartCoroutine(StartCountdown());
+
+        // viewport tow world point is relative to the camera
+        // getting the distance between the gameObject to camera
         float distance = Vector3.Distance(transform.position, Camera.main.transform.position);
 		Vector2 bottom = Camera.main.ViewportToWorldPoint(new Vector3(0,0, distance));
 		Vector2 top = Camera.main.ViewportToWorldPoint(new Vector3(1,1, distance));
@@ -58,7 +66,7 @@ public class PlayerMove : MonoBehaviour {
 		Vector3 mov = new Vector3(Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"), 0);
 		transform.position += mov * speed * Time.deltaTime;
 
-		move ();
+		move();
 
 		// Get current position
 		Vector3 pos = transform.position;
@@ -91,8 +99,23 @@ public class PlayerMove : MonoBehaviour {
 		transform.position = pos;
 	}
 
-	// create stardust for respawning
-	void CreateStardust()
+    public IEnumerator StartCountdown(float startTime = 10)
+    {
+        currentTime = startTime;
+        while (currentTime >= 0)
+        {
+            yield return new WaitForSeconds(1.0f);
+            currentTime--;
+
+            if (currentTime < 0)
+            {
+
+            }
+        }
+    }
+
+    // create stardust for respawning
+    void CreateStardust()
 	{
 		stardusts = new List<GameObject> ();
 
@@ -134,12 +157,14 @@ public class PlayerMove : MonoBehaviour {
 		if(Input.GetAxis("Horizontal") > 0)
 		{
 			right = true;
+            animator.SetInteger("Direction", 0);
 		}
 
 		else if(Input.GetAxis("Horizontal") < 0)
 		{
 			left = true;
-		}
+            animator.SetInteger("Direction", 1);
+        }
 
 		if(Input.GetAxis("Vertical") >0)
 		{
@@ -213,7 +238,8 @@ public class PlayerMove : MonoBehaviour {
             // if you're dead...
             if (currentHealth <= 0) 
 			{
-				// load the game over screen & play game over audio
+                // load the game over screen & play game over audio
+                //animator.SetInteger("Direction", 2);
                 Application.LoadLevel(3);
                 SoundManager.instance.PlaySingle(gameoverSound);
 
@@ -236,6 +262,7 @@ public class PlayerMove : MonoBehaviour {
             if (currentHealth <= 0)
             {
                 // load the game over screen & play game over audio
+                //animator.SetInteger("Direction", 2);
                 Application.LoadLevel(3);
                 SoundManager.instance.PlaySingle(gameoverSound);
 

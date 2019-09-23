@@ -12,17 +12,35 @@ public class BadCollectables : MonoBehaviour {
 	public GameObject cometPrefab;
 	public List<GameObject> comet;
 	public int maxComets = 10;
+    float currCountdownValue;
 
 
 	// initialization
-	void Start () 
-	{
-		CreateAsteroids ();
-		CreateComets ();
+	void Start ()
+    {
+        // start countdown to spawn objects
+        StartCoroutine(StartCountdown());
 
 	}
 
-	void CreateAsteroids()
+    public IEnumerator StartCountdown(float countdownValue = 10)
+    {
+        currCountdownValue = countdownValue;
+        while(currCountdownValue >= 0)
+        {
+            Debug.Log("Countdown: " + currCountdownValue);
+            yield return new WaitForSeconds(1.0f);
+            currCountdownValue--;
+
+            if(currCountdownValue < 0)
+            {
+                CreateAsteroids();
+                CreateComets();
+            }
+        }
+    }
+
+    void CreateAsteroids()
 	{
 		asteroid = new List<GameObject> ();
 

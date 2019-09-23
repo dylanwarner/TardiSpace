@@ -12,16 +12,34 @@ public class GoodCollectables : MonoBehaviour {
 	public GameObject starleafPrefab;
 	public List<GameObject> starleaves;
 	public int maxStarleaves = 5;
+    float currCountdownValue;
 
-	 
-	// initialization
-	void Start () 
+
+    // initialization
+    void Start () 
 	{
-		CreateStardust ();
-		CreateStarLeaves ();
-	}
+        // start countdown to spawn objects
+        StartCoroutine(StartCountdown());
+    }
 
-	void CreateStardust()
+    public IEnumerator StartCountdown(float countdownValue = 10)
+    {
+        currCountdownValue = countdownValue;
+        while (currCountdownValue >= 0)
+        {
+            Debug.Log("Countdown: " + currCountdownValue);
+            yield return new WaitForSeconds(1.0f);
+            currCountdownValue--;
+
+            if (currCountdownValue < 0)
+            {
+                CreateStardust();
+                CreateStarLeaves();
+            }
+        }
+    }
+
+    void CreateStardust()
 	{
 		stardusts = new List<GameObject> ();
 

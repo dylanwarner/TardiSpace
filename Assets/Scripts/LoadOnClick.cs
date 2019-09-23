@@ -8,4 +8,17 @@ public class LoadOnClick : MonoBehaviour {
         Application.LoadLevel(level); //loads scenes in unity. parameter 'level' is the index in the build settings of the level we want loaded
     }
 
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            Application.LoadLevel(0);
+        }
+        
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            Application.LoadLevel(2);
+        }
+    }
+
 }
