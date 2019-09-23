@@ -40,6 +40,13 @@ public class PlayerMove : MonoBehaviour {
 
     private Animator animator;
 
+    // invulnerability
+    bool damaged = true;
+    bool invul = false;
+    public float invulTime = 3f;
+    public float counter = 0;
+
+
     // initialization
     void Start () {
 
@@ -97,6 +104,18 @@ public class PlayerMove : MonoBehaviour {
 
 		// Update position
 		transform.position = pos;
+
+        // grants invulnerability
+        if (invul)
+        {
+            counter += Time.deltaTime;
+            if(counter > invulTime)
+            {
+                counter = 0;
+                invul = false;
+                damaged = true;
+            }
+        }
 	}
 
     public IEnumerator StartCountdown(float startTime = 10)
@@ -224,7 +243,7 @@ public class PlayerMove : MonoBehaviour {
             SoundManager.instance.RandomizeSfx(pickupSound1, pickupSound2);
         }
 		// if the game object is an asteroid by comparing tags at time of collision
-		else if (other.gameObject.CompareTag ("Asteroid")) 
+		else if (other.gameObject.CompareTag ("Asteroid") && damaged & !invul) 
 		{
 			// if you hit an asteroid, subtract five health
 			currentHealth = currentHealth - 5; 
@@ -234,6 +253,11 @@ public class PlayerMove : MonoBehaviour {
 			healthText.text = healthString;
             //play audio if hit asteroid
             SoundManager.instance.RandomizeSfx(injurySound1, injurySound2);
+
+            // activate invulnerablity
+            invul = true;
+            // only get hit once
+            damaged = false;
 
             // if you're dead...
             if (currentHealth <= 0) 
@@ -247,7 +271,7 @@ public class PlayerMove : MonoBehaviour {
 
 		}
 		// if the game object is a comet by comparing tags at time of collision
-		else if (other.gameObject.CompareTag ("Comet")) 
+		else if (other.gameObject.CompareTag ("Comet") && damaged && !invul) 
 		{
 			// subtract five health 
 			currentHealth = currentHealth - 20;
@@ -257,6 +281,11 @@ public class PlayerMove : MonoBehaviour {
 			healthText.text = healthString;
             //play audio if hit comet
             SoundManager.instance.RandomizeSfx(injurySound1, injurySound2);
+
+            // activate invulnerablity
+            invul = true;
+            // only get hit once
+            damaged = false;
 
             // if you're dead...
             if (currentHealth <= 0)
