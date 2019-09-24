@@ -21,14 +21,9 @@ public class PlayerMove : MonoBehaviour {
 	// variables to store the 
 	private float minX, maxX, minY, maxY;
 
-	// score and health variables
-	public int score;
-	public int starthealth = 100;
-	public int currentHealth;
+
     //public int startTime;
     public float currentTime;
-	public Text scoreText;
-	public Text healthText;
     public Text timeText;
 
     //audio variables
@@ -46,6 +41,9 @@ public class PlayerMove : MonoBehaviour {
     public float invulTime = 3f;
     public float counter = 0;
 
+
+    // get health component
+    public GetHealth getHP;
 
     // initialization
     void Start () {
@@ -65,7 +63,8 @@ public class PlayerMove : MonoBehaviour {
 		minY = bottom.y;
 		maxY = top.y;
 
-		currentHealth = starthealth;
+        // get health script
+        getHP = GameObject.Find("GetHealth").GetComponent<GetHealth>();
 	}
 	
 	void Update()
@@ -207,19 +206,10 @@ public class PlayerMove : MonoBehaviour {
 			other.gameObject.SetActive (false);
 			// respawn stardust
 			CreateStardust ();
-			// add ten to the score
-			score = score + 5;
-			currentHealth = currentHealth + 1;
-			// convert to string 
-			string scoreString = score.ToString ();
-			string healthString = currentHealth.ToString ();
-			// update text
-			scoreText.text = scoreString;
-			healthText.text = healthString;
+
             //play audio if hit stardust
             SoundManager.instance.RandomizeSfx(pickupSound1, pickupSound2);
 
-		
 
 
 		} 
@@ -230,27 +220,14 @@ public class PlayerMove : MonoBehaviour {
 			other.gameObject.SetActive (false);
 			// respawn starleaves
 			CreateStarLeaves ();
-			// add five to the score 
-			score = score + 5;
-			currentHealth = currentHealth + 1;
-			// convert to string 
-			string scoreString = score.ToString ();
-			string healthString = currentHealth.ToString ();
-			// update the text
-			scoreText.text = scoreString;
-			healthText.text = healthString;
+
             //play audio if hit star leaf
             SoundManager.instance.RandomizeSfx(pickupSound1, pickupSound2);
         }
 		// if the game object is an asteroid by comparing tags at time of collision
 		else if (other.gameObject.CompareTag ("Asteroid") && damaged & !invul) 
 		{
-			// if you hit an asteroid, subtract five health
-			currentHealth = currentHealth - 5; 
-			// convert to string 
-			string healthString = currentHealth.ToString ();
-			// update text
-			healthText.text = healthString;
+
             //play audio if hit asteroid
             SoundManager.instance.RandomizeSfx(injurySound1, injurySound2);
 
@@ -259,26 +236,24 @@ public class PlayerMove : MonoBehaviour {
             // only get hit once
             damaged = false;
 
+            // get health variable from GetHealth script and subtract it
+            getHP.health--;
+
             // if you're dead...
-            if (currentHealth <= 0) 
-			{
+            if (getHP.health == 0)
+            {
                 // load the game over screen & play game over audio
-                //animator.SetInteger("Direction", 2);
+                animator.SetInteger("Direction", 2);
                 Application.LoadLevel(3);
                 SoundManager.instance.PlaySingle(gameoverSound);
 
             }
 
-		}
+        }
 		// if the game object is a comet by comparing tags at time of collision
 		else if (other.gameObject.CompareTag ("Comet") && damaged && !invul) 
 		{
-			// subtract five health 
-			currentHealth = currentHealth - 20;
-			// convert to string 
-			string healthString = currentHealth.ToString ();
-			// update the text
-			healthText.text = healthString;
+
             //play audio if hit comet
             SoundManager.instance.RandomizeSfx(injurySound1, injurySound2);
 
@@ -287,13 +262,16 @@ public class PlayerMove : MonoBehaviour {
             // only get hit once
             damaged = false;
 
+            // get health variable from GetHealth script and subtract it
+            getHP.health--;
+
             // if you're dead...
-            if (currentHealth <= 0)
+            if (getHP.health == 0)
             {
-                // load the game over screen & play game over audio
-                //animator.SetInteger("Direction", 2);
-                Application.LoadLevel(3);
-                SoundManager.instance.PlaySingle(gameoverSound);
+              // load the game over screen & play game over audio
+             animator.SetInteger("Direction", 2);
+             Application.LoadLevel(3);
+            SoundManager.instance.PlaySingle(gameoverSound);
 
             }
         }
